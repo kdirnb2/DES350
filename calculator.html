@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <style>
+    </style>
+
+    <meta charset="utf-8">
+    <title>Katelyn Dirnberger</title>
+  </head>
+
+  <style>
+#top_display {display: block;}
+
+#display {width: 434px;
+          height: 100px;
+          text-align: right;
+          font-size: 30px;
+          background: black;
+          border: 2px solid rgb(60, 60, 60)}
+
+
+.button { border: none;
+          width: 110px;
+          height: 110px;
+          margin-right:-4px;
+          font-size: 25px;
+          background: black;
+          color: rgb(60, 60, 60);}
+
+.button:hover {background: rgb(60, 60, 60);
+                color: white;}
+
+.button1 {border: none;
+          width: 334px;
+          height: 110px;
+          margin-right:-4px;
+          font-size: 25px;
+          display: inline-block;
+          float: left;
+          background: white;
+          text-align: left;
+          background: black;
+          color: rgb(60, 60, 60);}
+
+.button1:hover {background: rgb(60, 60, 60);
+                color: white;}
+
+.button2 {border: none;
+          width: 224px;
+          height: 110px;
+          margin-right:-4px;
+          font-size: 25px;
+          display: inline-block;
+          float: left;
+          background: white;
+          text-align: left;
+          background: black;
+          color: rgb(60, 60, 60);}
+
+.button2:hover {background: rgb(60, 60, 60);
+                color: white;}
+
+body     {background: black;
+          margin-left: 600px;
+          margin-top: 100px;}
+
+
+
+
+  </style>
+
+<body>
+
+<form name="calculator">
+
+
+<div id="myCalculator">
+</div>
+
+<div id="top_display">
+  <input type="text" name="display" id="display" disabled>
+</div>
+
+
+
+
+
+  <div class="inputRow">
+  <input type="button" class="button1" name="clear" value="       clear"
+  onclick="calculator.display.value=''">
+
+  <input type="button" class="button"
+  class="operator" name="divide" value="÷"
+  onclick="calculator.display.value+='/'">
+
+
+</div>
+
+<div class="inputRow">
+  <input type="button" class="button"
+  name="seven" value="7"
+  onclick="calculator.display.value+='7'">
+
+  <input type="button" class="button"
+  name="eight" value="8"
+  onclick="calculator.display.value+='8'">
+
+  <input type="button" class="button"
+  name="nine" value="9"
+  onclick="calculator.display.value+='9'">
+
+  <input type="button" class="button"
+  class="operator" name="add" value="x"
+  onclick="calculator.display.value+='*'">
+
+</div>
+
+<div class="inputRow">
+  <input type="button" class="button"
+  name="six" value="6"
+  onclick="calculator.display.value+='6'">
+
+  <input type="button" class="button"
+  name="five" value="5"
+  onclick="calculator.display.value+='5'">
+
+  <input type="button" class="button"
+  name="four" value="4"
+  onclick="calculator.display.value+='4'">
+
+
+  <input type="button" class="button"
+  class="operator" name="add" value="-"
+  onclick="calculator.display.value+='-'">
+
+</div>
+
+<div class="inputRow">
+  <input type="button" class="button"
+  name="one" value="1"
+  onclick="calculator.display.value+='1'">
+
+  <input type="button" class="button"
+  name="two" value="2"
+  onclick="calculator.display.value+='2'">
+
+  <input type="button" class="button"
+  name="three" value="3"
+  onclick="calculator.display.value+='3'">
+
+  <input type="button" class="button"
+  class="operator" name="add" value="+"
+  onclick="calculator.display.value+='+'">
+
+</div>
+
+<div class="inputRow">
+  <div><input type="button" class="button2"
+  name="zero" value="        0"
+  onclick="calculator.display.value+='0'"></div>
+
+  <input type="button" class="button"
+  name="decimal" value="."
+  onclick="calculator.display.value+='.'">
+
+  <input type="button" class="button"
+  class="operator" name="equals" value="="
+  onclick="calculator.display.value=eval(calculator.display.value)">
+
+</div>
+
+
+
+</form>
+
+
+</body>
+
+</html>
