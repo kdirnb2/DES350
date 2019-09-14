@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+    <title>Rams-Inspired Calculator</title>
+<style> 
+	
+body {
+	background-color: #818085;
+	font-family: Helvetica, Arial, sans-serif; 
+	line-height: 1.4em;
+	padding: 0;
+	margin: 0;
+}	
+	.firstRow {
+		diplay: block;
+			height: 205px;
+	}
+	
+	.secondRow{
+		display: block;
+		height: 35px;
+	}
+	
+	
+
+	
+	
+
+.floatingElement1 {
+	display: inline-block;
+	float: left;
+  	background: #A5A4AA;
+  	width: 726px;
+  	height: 340px;  
+}	
+	
+#display{
+	border: none;
+	background: #A5A4AA;
+	width: 656px;
+	height: 340px;
+	text-align: right;
+	font-size: 150px;
+	font-weight: 200;
+	color: white;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	}
+	
+.floatingElement2 {
+	display: inline-block;
+	float: left;
+  	background: #A5A4AA;
+  	width: 480px;
+  	height: 340px;  
+}	
+	
+.floatingElementRed {
+	display: inline-block;
+	float: left;
+  	background: #E43A29;
+  	width: 80px;
+  	height: 340px;  
+}
+	
+.floatingelementtopright {
+	display: inline-block;
+	float: left;
+  	background: #A5A4AA;
+  	width: 393px;
+  	height: 340px;  
+}
+	
+.floatingElement3 {
+	display: inline-block;
+	float: left;
+  	background: #818085;
+  	width: 726px;
+  	height: 80px;  
+}	
+	
+.floatingElement3light {
+	display: inline-block;
+	float: left;
+  	background: #A5A4AA;
+  	width: 726px;
+  	height: 80px;  
+}
+	
+.floatingElement4 {
+	display: inline-block;
+	float: left;
+  	background: #818085;
+  	width: 400px;
+  	height: 80px;  
+}	
+	
+.button{
+	border: none;
+	height: 80px;
+	width: 80px;
+	margin: 0px;
+	padding: none;
+	corner-radius: 0px;
+	background: #818085;
+	font-size: 30px;
+	font-weight: 200;
+	color: white;
+	}
+	
+.button:hover{
+	background: #A5A4AA;
+	}
+	
+.floatingElement5 {
+	display: inline-block;
+	float: left;
+  	background: #818085;
+  	width: 80px;
+	height: 80px;
+}
+	
+.floatingElement5Red {
+	display: inline-block;
+	float: left;
+  	background: #E43A29;
+  	width: 80px;
+  	height: 80px;  
+}	
+
+.buttonred{
+	border: none;
+	height: 80px;
+	width: 80px;
+	margin: 0px;
+	padding: none;
+	corner-radius: 0px;
+	background: #E43A29;
+	font-size: 30px;
+	font-weight: 200;
+	color: white;
+	}
+	
+.buttonred:hover{
+	background: #cc2819;
+	}
+	
+.floatingElementright {
+	display: inline-block;
+	float: left;
+	background: #818085;
+	width: 393px;
+	height: 70px;
+	}
+	
+.floatingElement6 {
+	display: inline-block;
+	float: left;
+  	background: #ccc;
+  	width: 200px;
+  	height: 35px;  
+}	
+	
+.leftMostButton {
+	display: inline-block;
+	float: left;
+  	background: #ccc;
+  	width: 80px;
+  	height: 80px;  
+}
+	
+.lastred {
+	display: inline-block;
+	float: left;
+	background: #E43A29;
+	width: 80px;
+	height: 430px;
+	}
+	
+.label {
+	float: left;
+	background: #818085;
+	font-weight: 200;
+	font-size: 12px;
+	color: white;
+	margin-left: 80px;
+	margin-top: 200px;
+	line-height: 16px;
+	}
+
+
+</style>
+</head>
+<body>
+<form name="calculator">
+
+<div class="firstRow">
+	
+	<div class="floatingElement1">
+		<input type="text" name="display" id="display" disabled>
+	</div>	
+	<div class="floatingElement2"></div>	
+	<div class="floatingElementRed"></div>
+	<div class="floatingelementtopright"></div>
+	
+</div>
+	
+<!--start row 1 of buttons-->	
+	
+	<div class="secondRow">
+	<div class="floatingElement3light"></div>	
+		
+	<div class="floatingElement4">  
+		
+  <input type="button" class="button" name="add" value="+"
+  onclick="calculator.display.value+='+'"><input type="button" class="button" name="add" value="-"
+  onclick="calculator.display.value+='-'"><input type="button" class="button" name="add" value="x"
+  onclick="calculator.display.value+='*'"><input type="button" class="button" name="divide" value="÷"
+  onclick="calculator.display.value+='/'"><input type="button" class="button"
+  name="decimal" value="."
+  onclick="calculator.display.value+='.'">
+		
+		</div>
+		
+	<div class="floatingElement5"></div>
+		
+	<div class="floatingElement5Red">
+		
+		<input type="button" class="buttonred" name="equals" value="="
+  onclick="calculator.display.value=eval(calculator.display.value)">
+		
+		</div>
+		
+	<div class="floatingElementright"></div>
+	</div>
+	
+	
+<!--start row 2 of buttons-->
+	
+	<div class="secondRow">
+	<div class="floatingElement3"></div>	
+		
+	<div class="floatingElement4">  
+		
+  <input type="button" class="button"
+  name="one" value="1"
+  onclick="calculator.display.value+='1'"><input type="button" class="button"
+  name="two" value="2"
+  onclick="calculator.display.value+='2'"><input type="button" class="button"
+  name="three" value="3"
+  onclick="calculator.display.value+='3'"><input type="button" class="button"
+  name="four" value="4"
+  onclick="calculator.display.value+='4'"><input type="button" class="button"
+  name="five" value="5"
+  onclick="calculator.display.value+='5'">
+		
+		</div>
+		
+	<div class="floatingElement5"></div>
+		
+	<div class="floatingElement5Red">
+		
+  <input type="button" class="buttonred" name="clear" value="c"
+  onclick="calculator.display.value=''">
+		
+		</div>
+		
+	<div class="floatingElementright"></div>
+	</div>
+	
+	
+<!--start row 3 of buttons-->
+	
+		<div class="secondRow">
+	<div class="floatingElement3"></div>
+			
+	<div class="floatingElement4"> 
+		
+  <input type="button" class="button"
+  name="six" value="6"
+  onclick="calculator.display.value+='6'"><input type="button" class="button"
+  name="seven" value="7"
+  onclick="calculator.display.value+='7'"><input type="button" class="button"
+  name="eight" value="8"
+  onclick="calculator.display.value+='8'"><input type="button" class="button"
+  name="nine" value="9"
+  onclick="calculator.display.value+='9'"><input type="button" class="button"
+  name="zero" value="0"
+  onclick="calculator.display.value+='0'">
+		
+			</div>
+			
+	<div class="floatingElement5"></div>
+	<div class="lastred"></div>
+	</div>
+	
+	<div class="label">
+		<p>HTML Calculator by Katelyn Dirnberger.<br>Based on the work of Dieter Rams.</p>
+	</div>
+	
+	
+	</form>
+
+</body>
+</html>
