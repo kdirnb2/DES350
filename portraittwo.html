@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <style>
+		
+		#face{
+			margin-left: 38%;
+			margin-top: 50px;
+		}
+		
+		
+		.hairleft{
+			position: absolute;
+			width: 218.092px;
+			height: 103.254px;
+			background: grey;
+			border-radius: 130px/60px;
+			transform: rotate(-37deg);
+			z-index: 4;
+			margin-top: 70px;
+			margin-left: 5px;
+		}
+		
+		.hairright{
+			position: absolute;
+			width: 171.195px;
+			height: 98.917px;
+			background: grey;
+			border-radius: 170px/100px;
+			z-index: 4;
+			transform: rotate(30deg);
+			margin-left: 160px;
+			margin-top: 80px;
+		}
+		
+		.curlone{
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			box-shadow: 10px 10px 0 0 grey;
+			margin-top: 205px;
+			margin-left: 10px;
+		}
+		
+		.curltwo{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			box-shadow: 10px 5px 0 0 grey;
+			transform: rotate(30deg);
+			margin-top: 103px;
+			margin-left: 95px;
+			z-index: 4;
+		}
+		
+		.curlthree{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			box-shadow: 10px 5px 0 0 grey;
+			transform: rotate(50deg);
+			z-index: 4;
+			margin-left: 12px;
+			margin-top: 125px;
+		}
+		
+		.curlfour{
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			box-shadow: 10px 10px 0 0 grey;
+			transform: rotate(-170deg);
+			z-index: 4;
+			margin-left: 245px;
+			margin-top: 87px;
+		}
+		
+		.curlfive{
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			box-shadow: 10px 10px 0 0 grey;
+			transform: rotate(35deg);
+			z-index: 4;
+			margin-left: 275px;
+			margin-top: 120px;
+		}
+		
+		.curlsix{
+			position: absolute;
+			width: 70px;
+			height: 80px;
+			border-radius: 50%;
+			box-shadow: 10px 10px 0 0 grey;
+			transform: rotate(110deg);
+			margin-top: 170px;
+			margin-left: 291px;
+		}
+		
+		
+		
+		.headrec{
+			height: 170px;
+			width: 236px;
+			position: absolute;
+			background: lightgrey;
+			margin: 109px 0px 0px 60px
+		}
+		
+		
+		
+		.eyebrow{
+			width: 60.653px;
+			height: 14.753px;
+			position: absolute;
+			background: darkgrey;
+			border-radius: 200px/50px;
+		}
+		
+		#browleft{
+			transform: rotate(-25deg);
+			margin-top: 182px;
+			margin-left: 78px;
+		}
+		
+		#browright{
+			transform: rotate(25deg);
+			margin-top: 182px;
+			margin-left: 217px;
+		}
+		
+		.eyebrowblock{
+			width: 60.653px;
+			height: 35.194px;
+			position: absolute;
+			background: lightgrey;
+			border-radius: 100px/60px
+		}
+		
+		#browblockleft{
+			transform: rotate(-25deg);
+			margin-top: 183px;
+			margin-left: 83px
+		}
+		
+		#browblockright{
+			transform: rotate(25deg);
+			margin-top: 183px;
+			margin-left: 212px;
+		}
+		
+		
+		
+		.eyetop{
+			height: 48px;
+			width: 48px;
+			position: absolute;
+			background: grey;
+			border-radius: 50px;
+		}
+		
+		.eyeblock{
+			height: 48px;
+			width: 48px;
+			position: absolute;
+			background: lightgrey;
+			border-radius: 50px;
+			margin-top: 5px;
+		}
+		
+		.iris{
+			height: 31.277px;
+			width: 31.277px;
+			position: absolute;
+			background: grey;
+			border-radius: 50px;
+			margin-left: 8px;
+			margin-top: 4px;
+		}
+		
+		.reflection{
+			position: absolute;
+			width: 10px;
+			height: 6px;
+			background: white;
+			border-radius: 220px/100px;
+			margin-top: 12px;
+			margin-left: 24px;
+			transform: rotate(35deg)
+		}
+		
+		#lefteye{
+			position: absolute;
+			margin-top: 200px;
+			margin-left: 97px;
+			z-index: 2;
+		}
+		
+		#rightteye{
+			position: absolute;
+			margin-top: 200px;
+			margin-left: 215px;
+			z-index: 2;
+		}
+		
+		
+		@keyframes squint{
+			0% {top: 255px;}
+			100% {top: 270px;}
+		}
+		
+		.squint{
+			width: 38.967px;
+			height: 77.387px;
+			position: absolute;
+			background: lightgrey;
+			border-radius: 60px/120px;
+			transform: rotate(90deg);
+			z-index: 3;
+			animation-name: squint;
+			animation-iteration-count: infinite;
+			animation-duration: 2s;
+			animation-direction: alternate;
+		}
+		
+		#leftsquint{
+			margin-left: 97px;
+		}
+		
+		#rightsquint{
+			margin-left: 216px;
+		}
+		
+		
+		.nosetop{
+			position: absolute;
+			width: 15px;
+			height: 40px;
+			background: darkgrey;
+			margin-left: 10.5px;
+		}
+		
+		.nosebottom{
+			position: absolute;
+			width: 36px;
+			height: 36px;
+			border-radius: 50px;
+			background: darkgrey;
+			margin-top: 20px;
+		}
+		
+		#nose{
+			position: absolute;
+			margin-top: 227px;
+			margin-left: 160px;
+			z-index: 3;
+		}
+		
+		
+		
+		.open{
+			width: 107.036px;
+			height: 88.982px;
+			position: absolute;
+			background: grey;
+			border-radius: 100px/85px;
+			margin-left: 25px;
+		}
+		
+		.mouthblock{
+			position: absolute;
+			width: 156px;
+			height: 44px;
+			background: lightgrey;
+		}
+		
+		.teef{
+			position: absolute;
+			width: 82px;
+			height: 8px;
+			background: white;
+			margin-top: 44px;
+			margin-left: 37px;
+		}
+		
+		@keyframes laugh{
+			
+		}
+		
+		#mouth{
+			position: absolute;
+			z-index: 2;
+			margin-top: 265px;
+			margin-left: 100px;
+			animation-name: laugh;
+			
+		}
+		
+		
+		
+		.headoval{
+			width: 96.202px;
+			height: 131px;
+			position: absolute;
+			background: lightgrey;
+			border-radius: 80px / 110px;
+		}
+		
+		#ovalleft{
+			margin-top: 230px;
+			margin-left: 60px;
+		}
+		
+		#ovalright{
+			margin-top: 230px;
+			margin-left: 198px;
+		}
+		
+		
+		
+		.ear{
+			width: 38.967px;
+			height: 77.387px;
+			position: absolute;
+			background: lightgrey;
+			border-radius: 60px/120px;
+		}
+		
+		#earleft{
+			margin-left: 40px;
+			margin-top: 210px;
+		}
+		
+		#earright{
+			margin-left: 275px;
+			margin-top: 210px;
+		}
+		
+		
+		
+		.middleface{
+			width: 190px;
+			height: 100px;
+			position: absolute;
+			background: lightgrey;
+			margin-left: 82px;
+			margin-top: 250px;
+		}
+		
+		.bottomface{
+			width: 181px;
+			height: 101px;
+			position: absolute;
+			background: lightgrey;
+			border-radius: 90px / 50px;
+			margin-left: 88px;
+			margin-top: 290px;
+		}
+		
+		
+		
+		.hairback{
+			width: 266px;
+			height: 123px;
+			position: absolute;
+			background: grey;
+			margin-left: 45px;
+			margin-top: 165px;
+			z-index: -1;
+		}
+		
+		
+		
+		
+    </style>
+
+    <meta charset="utf-8">
+    <title>Portrait Animation</title>
+  </head>
+
+  <body>
+	  <div id="face">
+		  
+		  
+	  <div class="hairleft"></div>
+	  <div class="hairright"></div>
+	  <div class="curlone"></div>
+	  <div class="curltwo"></div>
+	  <div class="curlthree"></div>
+	  <div class="curlfour"></div>
+	  <div class="curlfive"></div>
+	  <div class="curlsix"></div>
+		  
+	  <div class="headrec"></div>
+		  
+	  <div id="leftbrow">
+	  <div class="eyebrow" id="browleft"></div>
+	  <div class="eyebrowblock" id="browblockleft"></div>
+		  </div>
+	  <div id="rightbrow">	  
+	  <div class="eyebrow" id="browright"></div>
+	  <div class="eyebrowblock" id="browblockright"></div>
+		  </div>
+		  
+	  <div id="lefteye">
+	  <div class="eyetop"></div>
+	  <div class="eyeblock"></div>
+	  <div class="iris"></div>
+	  <div class="reflection"></div>
+		  </div>
+	
+	  <div class="squint" id="leftsquint"></div>
+	  <div class="squint" id="rightsquint"></div>
+		  
+	  <div id="rightteye">
+	  <div class="eyetop"></div>
+	  <div class="eyeblock"></div>
+	  <div class="iris"></div>
+	  <div class="reflection"></div>
+		  </div>
+		  
+	  <div id="nose">
+	  <div class="nosetop"></div>
+	  <div class="nosebottom"></div>
+		  </div>
+		  
+	  <div id="mouth">
+	  <div class="open"></div>
+	  <div class="teef"></div>
+	  <div class="mouthblock"></div>
+		  </div>
+	  
+	  <div class="headoval" id="ovalleft"></div>
+	  <div class="headoval" id="ovalright"></div>
+		  
+	  <div class="ear" id="earleft"></div>
+	  <div class="ear" id="earright"></div>
+		  
+	  <div class="middleface"></div>
+	  <div class="bottomface"></div>
+		  
+	  <div class="hairback"></div>
+		  
+		  
+		  
+		  
+		  </div>
+
+  </body>
+</html>
