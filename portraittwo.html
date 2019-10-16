@@ -4,6 +4,10 @@
   <head>
     <style>
 		
+		body{
+		    background: lightblue;
+		}
+		
 		#face{
 			margin-left: 38%;
 			margin-top: 50px;
@@ -14,7 +18,7 @@
 			position: absolute;
 			width: 218.092px;
 			height: 103.254px;
-			background: grey;
+			background: saddlebrown;
 			border-radius: 130px/60px;
 			transform: rotate(-37deg);
 			z-index: 4;
@@ -26,7 +30,7 @@
 			position: absolute;
 			width: 171.195px;
 			height: 98.917px;
-			background: grey;
+			background: saddlebrown;
 			border-radius: 170px/100px;
 			z-index: 4;
 			transform: rotate(30deg);
@@ -39,7 +43,7 @@
 			width: 60px;
 			height: 60px;
 			border-radius: 50%;
-			box-shadow: 10px 10px 0 0 grey;
+			box-shadow: 10px 10px 0 0 saddlebrown;
 			margin-top: 205px;
 			margin-left: 10px;
 		}
@@ -49,7 +53,7 @@
 			width: 70px;
 			height: 70px;
 			border-radius: 50%;
-			box-shadow: 10px 5px 0 0 grey;
+			box-shadow: 10px 5px 0 0 saddlebrown;
 			transform: rotate(30deg);
 			margin-top: 103px;
 			margin-left: 95px;
@@ -61,7 +65,7 @@
 			width: 70px;
 			height: 70px;
 			border-radius: 50%;
-			box-shadow: 10px 5px 0 0 grey;
+			box-shadow: 10px 5px 0 0 saddlebrown;
 			transform: rotate(50deg);
 			z-index: 4;
 			margin-left: 12px;
@@ -73,7 +77,7 @@
 			width: 60px;
 			height: 60px;
 			border-radius: 50%;
-			box-shadow: 10px 10px 0 0 grey;
+			box-shadow: 10px 10px 0 0 saddlebrown;
 			transform: rotate(-170deg);
 			z-index: 4;
 			margin-left: 245px;
@@ -85,7 +89,7 @@
 			width: 60px;
 			height: 60px;
 			border-radius: 50%;
-			box-shadow: 10px 10px 0 0 grey;
+			box-shadow: 10px 10px 0 0 saddlebrown;
 			transform: rotate(35deg);
 			z-index: 4;
 			margin-left: 275px;
@@ -97,7 +101,7 @@
 			width: 70px;
 			height: 80px;
 			border-radius: 50%;
-			box-shadow: 10px 10px 0 0 grey;
+			box-shadow: 10px 10px 0 0 saddlebrown;
 			transform: rotate(110deg);
 			margin-top: 170px;
 			margin-left: 291px;
@@ -109,7 +113,7 @@
 			height: 170px;
 			width: 236px;
 			position: absolute;
-			background: lightgrey;
+			background: peachpuff;
 			margin: 109px 0px 0px 60px
 		}
 		
@@ -119,41 +123,79 @@
 			width: 60.653px;
 			height: 14.753px;
 			position: absolute;
-			background: darkgrey;
+			background: saddlebrown;
 			border-radius: 200px/50px;
+		}
+		
+		@keyframes browraise{
+			0% {margin-top: 182px;}
+			25% {margin-top: 165px;}
+			30% {margin-top: 182px;}
+			35% {margin-top: 165px;}
+			40% {margin-top: 182px;}
+			45% {margin-top: 165px;}
+			50% {margin-top: 182px;}
+			100% {margin-top: 182px;}
 		}
 		
 		#browleft{
 			transform: rotate(-25deg);
-			margin-top: 182px;
 			margin-left: 78px;
+			animation-name: browraise;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
 		}
 		
 		#browright{
 			transform: rotate(25deg);
 			margin-top: 182px;
 			margin-left: 217px;
+			animation-name: browraise;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+		
+		@keyframes blockraise {
+			0% {margin-top: 183px;}
+			25% {margin-top: 166px;}
+			30% {margin-top: 183px;}
+			35% {margin-top: 166px;}
+			40% {margin-top: 183px;}
+			45% {margin-top: 166px;}
+			50% {margin-top: 183px;}
+			100% {margin-top: 183px;}
 		}
 		
 		.eyebrowblock{
 			width: 60.653px;
 			height: 35.194px;
 			position: absolute;
-			background: lightgrey;
+			background: peachpuff;
 			border-radius: 100px/60px
 		}
 		
 		#browblockleft{
 			transform: rotate(-25deg);
 			margin-top: 183px;
-			margin-left: 83px
+			margin-left: 83px;
+			animation-name: blockraise;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
 		}
 		
 		#browblockright{
 			transform: rotate(25deg);
 			margin-top: 183px;
 			margin-left: 212px;
+			animation-name: blockraise;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
 		}
+		
 		
 		
 		
@@ -161,7 +203,7 @@
 			height: 48px;
 			width: 48px;
 			position: absolute;
-			background: grey;
+			background: #5a2d0c;
 			border-radius: 50px;
 		}
 		
@@ -169,7 +211,7 @@
 			height: 48px;
 			width: 48px;
 			position: absolute;
-			background: lightgrey;
+			background: peachpuff;
 			border-radius: 50px;
 			margin-top: 5px;
 		}
@@ -178,7 +220,7 @@
 			height: 31.277px;
 			width: 31.277px;
 			position: absolute;
-			background: grey;
+			background: #5a2d0c;
 			border-radius: 50px;
 			margin-left: 8px;
 			margin-top: 4px;
@@ -211,22 +253,28 @@
 		
 		
 		@keyframes squint{
-			0% {top: 255px;}
-			100% {top: 270px;}
+			0% {margin-top: 225px;}
+			25% {margin-top: 205px;}
+			30% {margin-top: 225px;}
+			35% {margin-top: 205px;}
+			40% {margin-top: 225px;}
+			45% {margin-top: 205px;}
+			50% {margin-top: 225px;}
+			100% {margin-top: 225px;}
 		}
 		
 		.squint{
 			width: 38.967px;
 			height: 77.387px;
 			position: absolute;
-			background: lightgrey;
+			background: peachpuff;
 			border-radius: 60px/120px;
 			transform: rotate(90deg);
 			z-index: 3;
 			animation-name: squint;
+			animation-duration: 5s;
 			animation-iteration-count: infinite;
-			animation-duration: 2s;
-			animation-direction: alternate;
+			animation-timing-function: ease-in-out;
 		}
 		
 		#leftsquint{
@@ -238,11 +286,13 @@
 		}
 		
 		
+		
+		
 		.nosetop{
 			position: absolute;
 			width: 15px;
 			height: 40px;
-			background: darkgrey;
+			background: #ffc999;
 			margin-left: 10.5px;
 		}
 		
@@ -251,55 +301,105 @@
 			width: 36px;
 			height: 36px;
 			border-radius: 50px;
-			background: darkgrey;
+			background: #ffc999;
 			margin-top: 20px;
 		}
 		
+		
 		#nose{
 			position: absolute;
-			margin-top: 227px;
 			margin-left: 160px;
+			margin-top: 227px;
 			z-index: 3;
 		}
 		
 		
 		
+		
 		.open{
-			width: 107.036px;
+			width: 107.036px; 
 			height: 88.982px;
 			position: absolute;
-			background: grey;
-			border-radius: 100px/85px;
+			background: maroon;
 			margin-left: 25px;
+			border-radius: 100px/85px;
+			z-index: 4;
 		}
 		
 		.mouthblock{
-			position: absolute;
-			width: 156px;
+			width: 156px; 
 			height: 44px;
-			background: lightgrey;
+			position: absolute;
+			z-index:5;
+			background: peachpuff;
 		}
 		
 		.teef{
 			position: absolute;
 			width: 82px;
 			height: 8px;
+			z-index: 4;
 			background: white;
 			margin-top: 44px;
 			margin-left: 37px;
 		}
 		
-		@keyframes laugh{
-			
+		@keyframes mouth{
+			25%{transform: scale(1.1,1.1); margin-top: 255px; margin-left: 93px;}
+			30% {transform: none; margin-top: 265px; margin-left: 100px;}
+			35%{transform: scale(1.1,1.1); margin-top: 255px; margin-left: 93px;}
+			40% {transform: none; margin-top: 265px; margin-left: 100px;}
+			45%{transform: scale(1.1,1.1); margin-top: 255px; margin-left: 93px;}
+			50% {transform: none; margin-top: 265px; margin-left: 100px;}
+			100% {transform: none; margin-top: 265px; margin-left: 100px;}
 		}
 		
 		#mouth{
+			margin-top: 265px;
 			position: absolute;
 			z-index: 2;
-			margin-top: 265px;
 			margin-left: 100px;
-			animation-name: laugh;
-			
+			animation-name: mouth;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timint-function: ease-in-out;
+		}
+		
+		@keyframes cheek{
+			25%{margin-top: 255px; transform: scale(1.2,1.2)}
+			30%{margin-top: 260px; transform: none;}
+			35%{margin-top: 255px; transform: scale(1.2,1.2)}
+			40%{margin-top: 260px; transform: none;}
+			45%{margin-top: 255px; transform: scale(1.2,1.2)}
+			50%{margin-top: 260px; transform: none;}
+			100%{margin-top: 260px; transform: none;}
+		}
+		
+		.cheek{
+			position: absolute;
+			width: 40px;
+			height: 15px;
+			background: pink;
+			border-radius: 100px/85px;
+			z-index: 5;
+		}
+		
+		#leftcheek{
+			margin-top: 260px;
+			margin-left: 80px;
+			animation-name: cheek;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+		
+		#rightcheek{
+			margin-top: 260px;
+			margin-left: 230px;
+			animation-name: cheek;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
 		}
 		
 		
@@ -308,7 +408,7 @@
 			width: 96.202px;
 			height: 131px;
 			position: absolute;
-			background: lightgrey;
+			background: peachpuff;
 			border-radius: 80px / 110px;
 		}
 		
@@ -328,7 +428,7 @@
 			width: 38.967px;
 			height: 77.387px;
 			position: absolute;
-			background: lightgrey;
+			background: peachpuff;
 			border-radius: 60px/120px;
 		}
 		
@@ -348,7 +448,7 @@
 			width: 190px;
 			height: 100px;
 			position: absolute;
-			background: lightgrey;
+			background: peachpuff;
 			margin-left: 82px;
 			margin-top: 250px;
 		}
@@ -357,7 +457,7 @@
 			width: 181px;
 			height: 101px;
 			position: absolute;
-			background: lightgrey;
+			background: peachpuff;
 			border-radius: 90px / 50px;
 			margin-left: 88px;
 			margin-top: 290px;
@@ -369,7 +469,7 @@
 			width: 266px;
 			height: 123px;
 			position: absolute;
-			background: grey;
+			background: saddlebrown;
 			margin-left: 45px;
 			margin-top: 165px;
 			z-index: -1;
@@ -435,6 +535,9 @@
 	  <div class="teef"></div>
 	  <div class="mouthblock"></div>
 		  </div>
+		  
+	  <div class="cheek" id="leftcheek"></div>
+	  <div class="cheek" id="rightcheek"></div>
 	  
 	  <div class="headoval" id="ovalleft"></div>
 	  <div class="headoval" id="ovalright"></div>
