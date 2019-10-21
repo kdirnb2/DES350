@@ -5,26 +5,91 @@
     <style>
 		body{
 			font-family: Helvetica, arial, sans-serif;
-			background: white;
-			color: black;
+			background: black;
+			color: white;
+			margin-top: 3%;
+			margin-left: 5%;
 		}
 		a{
-			color: black;
+			color: #58595B;
 			text-decoration: none;
-			font-size: 30px;
-			line-height: 60px;
+			font-size: 18px;
+			line-height: 30px;
 			font-weight: 100;
+			transition: color 1s ease-in-out;
 		}
 		
 		a:hover{
-			color: red;
+			color: white;
+			font-size: 20px;
 		}
 		
-		h{
-			font-size: 70px;
-			font-weight: bolder;
-			line-height: 88px;
+		h1{
+			font-size: 66px;
+			font-weight: 100;
+			line-height: 10px;
 		}
+		
+		h2{
+			font-size: 18px;
+			font-weight: 100;
+			line-height: 10px;
+		}
+		
+		#about h2{
+			font-size: 18px;
+			font-weight: 100;
+			line-height: 30px;
+		}
+		
+		h3{
+			font-size: 30px;
+			font-weight: 100;
+			line-height: 1em;
+		}
+		
+		.float{
+			float: left;
+			height: 200px; 
+			width: 15.2%;
+			margin-right: 2%;
+			border-top: 1px solid white;
+			padding-left: 15px;
+			margin-top: 180px;
+		}
+		
+		
+		
+		#about{
+			width: 88%;
+			height: 120px;
+			margin-top: 630px;
+			border-top: 1px solid white;
+			padding-left: 15px;
+			opacity: 0;
+			transition: opacity 1s;
+		}
+		
+		#about:hover{
+			opacity: 100;
+		}
+		
+		#aboutblock{
+			height: 140px;
+			width: 82%;
+			background:black;
+			z-index: 2;
+			position: fixed;
+			margin-top: 690px;
+		}
+		
+		.hack{
+			height: 160px;
+			width: 82%;
+		}
+		
+		
+		
     </style>
 
     <meta charset="utf-8">
@@ -32,18 +97,54 @@
   </head>
 
   <body>
-  <h> Katelyn Dirnberger / DES350 </h> <br> <br> <br>
+
 	  
-  <a href="calculator.html" target="_self">CSS Calculator</a><br>
-  <a href="ramsimagenew.html" target="_self">Rams-Inspired Calculator (Image)</a><br>
-  <a href="calculator2.html" target="_self">Rams-Inspired Calculator (Coded)</a><br><br><br>
-  <a href="essay.html" target="_self">Dieter Rams Essay</a><br>
-  <a href="essay2.html" target="_self">2nd Dieter Rams Essay</a><br>
-  <a href="rams_essay_layout.html" target="_self">2nd Dieter Rams Essay (Image)</a><br><br><br>
+  <h2>Katelyn Dirnberger</h2><h1>/DES350</h1>
+
+<div id="container">	  
+	  
+  <div class="float" id="calculator">
+	  <h3>Calculator</h3>
+  <a href="calculator2.html" target="_self">Rams-Inspired Calculator</a><br>
+  <a href="ramsimagenew.html" target="_self">Rams Ideation</a><br>
+  <a href="calculator.html" target="_self">Basic Calculator</a>
+	  </div>
+	  
+  <div class="float" id="essay">
+  <h3>Web Poster</h3>
+  <a href="essay2.html" target="_self">Final Web Poster</a><br>
+  <a href="rams_essay_layout.html" target="_self">Poster Ideation</a><br>
+  <a href="essay.html" target="_self">Basic Page</a>
+	  </div>
+	  
+  <div class="float" id="portrait">  
+  <h3>HTML Portrait</h3>
   <a href="portraitimage.html" target="_self">Portrait (Image)</a><br>
   <a href="portraitone.html" target="_self">Portrait (Coded)</a><br>
-  <a href="portraittwo.html" target="_self">Portrait (Animated)</a><br><br><br>
+  <a href="portraittwo.html" target="_self">Portrait (Animated)</a><br>
+	  </div>
+	  
+  <div class="float" id="portfolio">  
+  <h3>Portfolio</h3>
   <a href="portfoliosites.html" target="_self">Portfolio Site Examples</a>
+	  </div>
+	
+	 <div class="float" id="final">  
+  <h3>Final</h3>
+	  </div>
+	  
+	</div>  
+	  
+	  
+<div id="about">
+<h2>This site is a collection of student work for an advanced interactive design course. All the work shown is based in HTML and 
+CSS code, with opportunity for exploration, expression, and growth. </h2>
+</div>
+
+	  
+
+	 
+	  
   </body>
 	
 </html>
