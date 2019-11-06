@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <style>
+		
+		
+		#preload{
+			background: url("newposter.gif") no-repeat -9999px -9999px;
+		}
+	
+		body{background-color: white;
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		.poster{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 40%;
+			height: 90vh;
+			background: url("newpostertest.jpg") no-repeat center;
+			background-size: contain;
+		}
+		
+		.poster:hover{
+			background: url("newposter.gif") no-repeat center;
+			background-size: contain;
+		}
+		
+    </style>
+
+    <meta charset="utf-8">
+    <title>Illustrated Poster</title>
+  </head>
+
+  <body>
+	  
+	  <div id="preload"></div>
+	  <div class="poster"></div>
+
+  </body>
+</html>
