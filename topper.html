@@ -176,14 +176,13 @@
 			font-weight: 100;
 			font-size: 2vw;
 			margin-top: 4px;
-			margin-bottom: 15px;
+			margin-bottom: 1%;
 		}
 		
 		p{
 			color: white;
 			font-family: Helvetica, arial, sans-serif;
 			font-weight: 100;
-			margin-top: 0px;
 			font-size: 1vw;
 			line-height: 1.4em;
 		}
@@ -191,10 +190,17 @@
 		a{
 			text-decoration: none;
 			color: white;
+			transition: font-size: 1s;
+		}
+		
+		.wikipedia a {
+			text-decoration:underline;
 		}
 		
 		.wikipedia a:hover {
-			text-decoration:underline;
+			background-color: white;
+			color: black;
+			text-decoration: none;
 		}
 		
 		
@@ -206,10 +212,27 @@
 			margin-top: 105%;
 			margin-left: 10.5%;
 			padding-top: 0px;
+			text-decoration: underline;
+			transition: width 1s;
+			transition: font-size 1s;
+		}
+		
+		#big{
+			display: show;
+		}
+		
+		#small{
+			display: none;
 		}
 		
 		.visitpark:hover{
-			text-decoration: underline;
+			text-decoration: none;
+			width: 35%;
+			margin-top: 104.5%;
+		}
+		
+		.visitpark:hover a{
+			font-size: 6vw;
 		}
 		
 		.visitpark:hover + .coordinates{
@@ -280,6 +303,14 @@
 			margin-left: 10.5%;
 		}
 		
+		#bigplan{
+			display: show;
+		}
+		
+		#smallplan{
+			display: none;
+		}
+		
 		.icon{
 			height: 118px;
 			position: absolute;
@@ -287,12 +318,13 @@
 			width: 7%;
 		}
 		
-		#exploring{
+		
+		#hiking{
 			margin-top: 205%;
 			margin-left: 26.5%;
 		}
 		
-		#hiking{
+		#exploring{
 			margin-top: 205%;
 			margin-left: 42.5%;
 		}
@@ -309,12 +341,12 @@
 			width: 12%;
 		}
 		
-		#explore{
+		#hike{
 			margin-top: 213%;
 			margin-left: 26.5%;
 		}
 		
-		#hike{
+		#explore{
 			margin-top: 213%;
 			margin-left: 42.5%;
 		}
@@ -383,17 +415,308 @@
 			margin-top: 309%;
 		}
 		
+		#hiking img{
+			margin-top: 9%;
+		}
+		
 		#fishing img{
-			margin-top: 25px;
+			margin-top: -5%;
 		}
 		
 		#riding img{
 			align-content: center;
-			margin-top: 5px;
+			margin-top: 6%;
 		}
 		
 		#camping img{
-			margin-top: 5px;
+			margin-top: 14%;
+		}
+		
+		
+		
+		
+		@media only screen and (max-width: 500px){
+			
+		h5{
+			font-size: 7.4vw;
+			line-height:1em;
+			margin-top: 12%;
+		}
+		
+		h2{
+			font-size: 7.4vw;
+			line-height: 1em;
+			margin-top: 0px;
+		}
+		
+		h3{
+			font-size: 10pt;
+			line-height: 1.2em;
+			margin-top: 45px;
+		}
+			
+			.moreparks h3{
+				font-size: 4vw;
+			}
+		
+		h6{
+			font-size: 4vw;
+			margin-top: 4px;
+			margin-bottom: 1%;
+		}
+		
+		p{
+			font-size: 8pt;
+			line-height: 1.2em;
+		}
+		
+		a{
+			transition: font-size: 1s;
+		}
+		
+		.wikipedia a {
+			text-decoration:underline;
+		}
+		
+		.wikipedia a:hover {
+			background-color: white;
+			color: black;
+			text-decoration: none;
+		}
+		
+		
+		.visitpark{
+			width: 64%;
+			height: 80px;
+			margin-top: 105%;
+			margin-left: 18.5%;
+			padding-top: 0px;
+			text-decoration: underline;
+			transition: width 1s;
+			transition: font-size 1s;
+		}
+		
+			#big{
+				display: none;
+			}
+			
+			#small{
+				display: initial;
+			}
+			
+		.visitpark:hover{
+			text-decoration: underline;
+			width: 64%;
+			margin-top: 105%;
+		}
+		
+		.visitpark:hover a{
+			font-size: 7.4vw;
+		}
+		
+		.visitpark:hover + .coordinates{
+			margin-left: 18.5%;
+		}
+			
+		.coordinates{
+			width: 31%;
+			position: absolute;
+			z-index: 7;
+			height: 118px;
+			margin-top: 113%;
+			margin-left: 18.5%;
+			transition: margin-left 1s;
+		}	
+			
+		.description{
+			height: 100px;
+			width: 39%;
+			z-index: 7;
+			position: absolute;
+			padding: 0px;
+		}
+		
+		#topdes{
+			margin-top: 157%;
+			margin-left: 18.5%;
+		}
+		
+		#middledes{
+			margin-top: 202%;
+			margin-left: 42.5%;
+		}
+		
+		#bottomdes{
+			margin-top: 247%;
+			margin-left: 18.5%;
+		}	
+			
+		.data{
+			height: 118px;
+			width: 15%;
+			z-index: 7;
+			position: absolute;
+		}
+		
+		#datatop{
+			margin-top: 157%;
+			margin-left: 64.5%;
+		}
+		
+		#datamid{
+			margin-top: 202%;
+			margin-left: 10.5%;
+		}
+		
+		#databottom{
+			margin-top: 247%;
+			margin-left: 64.5%;
+		}	
+			
+		.plan{
+			width: 66%;
+			height: 80px;
+			z-index: 7;
+			position: absolute;
+			margin-top: 290%;
+			margin-left: 18.5%;
+		}
+			
+			#bigplan{
+				display: none;
+			}
+			
+			#smallplan{
+				display: initial;
+			}
+		
+		.icon{
+			height: 118px;
+			position: absolute;
+			z-index: 7;
+			width: 15%;
+		}
+		
+		
+		#hiking{
+			margin-top: 315%;
+			margin-left: 10.5%;
+		}
+		
+		#exploring{
+			margin-top: 315%;
+			margin-left: 42.5%;
+		}
+		
+		#fishing{
+			margin-top: 315%;
+			margin-left: 74.5%;
+		}
+		
+		.activity{
+			height: 118px;
+			width: 23%;
+		}
+		
+		#hike{
+			margin-top: 331%;
+			margin-left: 10.5%;
+		}
+		
+		#explore{
+			margin-top: 331%;
+			margin-left: 42.5%;
+		}
+		
+		#fish{
+			margin-top: 331%;
+			margin-left: 74.5%;
+		}
+		
+		#riding{
+			margin-top: 365%;
+			margin-left: 42.5%;
+		}
+		
+		#camping{
+			margin-top: 365%;
+			margin-left: 74.5%;
+		}
+		
+		#ride{
+			margin-top: 381%;
+			margin-left: 42.5%;
+		}
+		
+		#camp{
+			margin-top: 381%;
+			margin-left: 74.5%;
+		}
+		
+		.moreparks{
+			position: absolute;
+			z-index: 7;
+			height: 118px;
+			width: 51%;
+			margin-left: 10.5%;
+			margin-top: 430%;
+		}
+		
+		.gif{
+			width: 23%;
+		}
+		
+		#firstcolumn{
+			margin-top: 450%;
+			margin-left: 10.5%;
+		}
+		
+		#midcolumn{
+			margin-top: 450%;
+			margin-left: 42.5%;
+		}
+		
+		#lastcolumn{
+			margin-top: 450%;
+			margin-left: 74.5%;
+		}
+		
+		.wikipedia{
+			height: 118px;
+			width: 51%;
+			margin-left: 42.5%;
+			margin-top: 490%;
+		}
+		
+		#hiking img{
+			margin-top: 9%;
+		}
+		
+		#fishing img{
+			margin-top: -5%;
+		}
+		
+		#riding img{
+			align-content: center;
+			margin-top: 6%;
+		}
+		
+		#camping img{
+			margin-top: 14%;
+		}	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		}
 		
 		
@@ -446,7 +769,8 @@
  <!-- begin body content -->
 	  
 	  
-  <div class="visitpark"><h5><a href="https://www.nps.gov/grte/index.htm">VISIT<br>THE PARK</a></h5></div>
+  <div class="visitpark" id="big"><h5><a href="https://www.nps.gov/grte/index.htm">VISIT<br>THE PARK</a></h5></div>
+  <div class="visitpark" id="small"><h5><a href="https://www.nps.gov/grte/index.htm">VISIT THE PARK</a></h5></div>
 	  
   <div class="coordinates"><h3>EST. 1929<br>43.7904º N, 110.6818º W</h3></div>
 	  
@@ -464,17 +788,19 @@
 	  
 	  
 	  
-  <div class="plan"><h5>PLAN<br>YOUR TRIP</h5></div>
+  <div class="plan" id="bigplan"><h5>PLAN<br>YOUR TRIP</h5></div>
 	  
-   <div class="icon" id="exploring"><img src="exploring.svg" alt=""/></div>
+  <div class="plan" id="smallplan"><h5>PLAN YOUR TRIP</h5></div>
 	  
-  <div class="icon" id="hiking"><img src="hiking.svg" alt=""/></div>
+   <div class="icon" id="exploring"><img src="exploring2.svg" alt=""/></div>
 	  
-  <div class="icon" id="fishing"><img src="fishing.svg" alt=""/></div>
+  <div class="icon" id="hiking"><img src="hiking2.svg" alt=""/></div>
 	  
-  <div class="icon" id="riding"><img src="riding.svg" alt=""/></div>
+  <div class="icon" id="fishing"><img src="fishing2.svg" alt=""/></div>
 	  
-  <div class="icon" id="camping"><img src="camping.svg" alt=""/></div>
+  <div class="icon" id="riding"><img src="riding2.svg" alt=""/></div>
+	  
+  <div class="icon" id="camping"><img src="camping2.svg" alt=""/></div>
 	  
   <div class="activity" id="explore"><h6>Exploring</h6><p>Driving through Grand Teton National Park offers stunning views of the Teton Range.</p></div>
 	  
@@ -491,32 +817,35 @@
   <div class="moreparks"><h3>More national parks to visit:</h3></div>
 	  
   <div class="gif" id="firstcolumn"><script type="text/javascript">
-var total_images = 3;
+var total_images = 5;
 var random_number = Math.floor((Math.random()*total_images));
 var random_img = new Array();
-random_img[0] = '<a href="page1.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
-random_img[1] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
-random_img[2] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+random_img[0] = '<a href="page1.html"><img src="https://zali30.github.io/DES350/web/photo/posterM.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://k11borrero.github.io/DES350/finalparksposter.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://anhvyb.github.io/DES350/posterRRRb%203_1.gif" width="100%"></a>'; random_img[3] = '<a href="page4.html"><img src="https://tmfriese.github.io/DES350/Comp-1_4.gif" width="100%"></a>'; random_img[4] = '<a href="page5.html"><img src="https://agarc88.github.io/DES350/Mesa-Verde-Poster-1_1.gif" width="100%"></a>';
 document.write(random_img[random_number]);
 </script></div>
 	  
   <div class="gif" id="midcolumn"><script type="text/javascript">
-var total_images = 3;
+var total_images = 5;
 var random_number = Math.floor((Math.random()*total_images));
 var random_img = new Array();
-random_img[0] = '<a href="page1.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
-random_img[1] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
-random_img[2] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+random_img[0] = '<a href="page1.html"><img src="https://cgasid2.github.io/DES350/final-poster-animation-.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://gira006.github.io/DES350/poster_animation.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://ahalam2.github.io/DES350/Yellowstone.gif" width="100%"></a>'; random_img[3] = '<a href="page1.html"><img src="https://donteking.github.io/DES350/AnimatedPoster.gif" width="100%"></a>'; random_img[4] = '<a href="page1.html"><img src="https://samorie.github.io/DES350/poster_final1.gif" width="100%"></a>';
 document.write(random_img[random_number]);
 </script></div>
 	  
   <div class="gif" id="lastcolumn"><script type="text/javascript">
-var total_images = 3;
+var total_images = 6;
 var random_number = Math.floor((Math.random()*total_images));
 var random_img = new Array();
-random_img[0] = '<a href="page1.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
-random_img[1] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
-random_img[2] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+random_img[0] = '<a href="page1.html"><img src="https://dmejia11.github.io/DES350/Mejia_rocky.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://jmiran28.github.io/DES350/olympic-poster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://snguye44.github.io/DES350/natureposterfinal.gif" width="100%"></a>';
+random_img[3] = '<a href="page2.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+random_img[4] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
+random_img[5] = '<a href="page2.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
 document.write(random_img[random_number]);
 </script></div>
 	  
