@@ -282,14 +282,35 @@
 		#datatop{
 			margin-top: 127%;
 			margin-left: 74.5%;
+			display: show;
+		}
+		
+		#datatopsmall{
+			display: none;
+			margin-top: 127%;
+			margin-left: 74.5%;
 		}
 		
 		#datamid{
 			margin-top: 142%;
 			margin-left: 26.5%;
+			display: show;
+		}
+		
+		#datamidsmall{
+			display: none;
+			margin-top: 142%;
+			margin-left: 26.5%;
 		}
 		
 		#databottom{
+			margin-top: 157%;
+			margin-left: 74.5%;
+			display: show;
+		}
+		
+		#databottomsmall{
+			display: none;
 			margin-top: 157%;
 			margin-left: 74.5%;
 		}
@@ -388,7 +409,7 @@
 		.gif{
 			position: absolute;
 			z-index: 7;
-			width: 15%;
+			width: 23%;
 		}
 		
 		#firstcolumn{
@@ -412,7 +433,7 @@
 			height: 118px;
 			width: 31%;
 			margin-left: 58.5%;
-			margin-top: 309%;
+			margin-top: 319%;
 		}
 		
 		#hiking img{
@@ -435,44 +456,55 @@
 		
 		
 		
-		@media only screen and (max-width: 500px){
+		@media only screen and (max-width: 600px){
+			
+		h1{
+			font-size: 11vw;
+		}
+			
+		.title{
+			margin-left: 10%;
+		}
+			
+		.visit{
+			font-size: 3vw;
+			margin-left: 10.5%;
+			margin-top:8%;
+		}
 			
 		h5{
-			font-size: 7.4vw;
+			font-size: 10vw;
 			line-height:1em;
 			margin-top: 12%;
 		}
 		
 		h2{
-			font-size: 7.4vw;
+			font-size: 10vw;
 			line-height: 1em;
 			margin-top: 0px;
 		}
 		
 		h3{
-			font-size: 10pt;
+			font-size: 16pt;
 			line-height: 1.2em;
 			margin-top: 45px;
 		}
 			
-			.moreparks h3{
-				font-size: 4vw;
-			}
 		
 		h6{
-			font-size: 4vw;
+			font-size: 7vw;
 			margin-top: 4px;
 			margin-bottom: 1%;
 		}
 		
 		p{
-			font-size: 8pt;
+			font-size: 16pt;
 			line-height: 1.2em;
 		}
+			.wikipedia p{
+				font-size: 3vw;
+			}
 		
-		a{
-			transition: font-size: 1s;
-		}
 		
 		.wikipedia a {
 			text-decoration:underline;
@@ -486,10 +518,10 @@
 		
 		
 		.visitpark{
-			width: 64%;
+			width: 90%;
 			height: 80px;
 			margin-top: 105%;
-			margin-left: 18.5%;
+			margin-left: 6.5%;
 			padding-top: 0px;
 			text-decoration: underline;
 			transition: width 1s;
@@ -506,12 +538,12 @@
 			
 		.visitpark:hover{
 			text-decoration: underline;
-			width: 64%;
+			width: 90%;
 			margin-top: 105%;
 		}
 		
 		.visitpark:hover a{
-			font-size: 7.4vw;
+			font-size: 10vw;
 		}
 		
 		.visitpark:hover + .coordinates{
@@ -519,67 +551,77 @@
 		}
 			
 		.coordinates{
-			width: 31%;
-			position: absolute;
-			z-index: 7;
+			width: 51%;
 			height: 118px;
-			margin-top: 113%;
+			margin-top: 127%;
 			margin-left: 18.5%;
-			transition: margin-left 1s;
 		}	
 			
 		.description{
 			height: 100px;
-			width: 39%;
+			width: 71%;
 			z-index: 7;
 			position: absolute;
 			padding: 0px;
 		}
 		
 		#topdes{
-			margin-top: 157%;
+			margin-top: 167%;
 			margin-left: 18.5%;
 		}
 		
 		#middledes{
-			margin-top: 202%;
-			margin-left: 42.5%;
+			margin-top: 239%;
+			margin-left: 18.5%;
 		}
 		
 		#bottomdes{
-			margin-top: 247%;
+			margin-top: 307%;
 			margin-left: 18.5%;
 		}	
 			
 		.data{
 			height: 118px;
-			width: 15%;
+			width: 73.5%;
 			z-index: 7;
 			position: absolute;
 		}
 		
 		#datatop{
-			margin-top: 157%;
-			margin-left: 64.5%;
+			display: none;
 		}
+		
+			#datatopsmall{
+				display: initial;
+				margin-top: 160%;
+				margin-left: 18.5%;
+			}
 		
 		#datamid{
-			margin-top: 202%;
-			margin-left: 10.5%;
+			display: none;
 		}
+			#datamidsmall{
+				display: initial;
+				margin-top: 232%;
+				margin-left: 18.5%;
+			}
 		
 		#databottom{
-			margin-top: 247%;
-			margin-left: 64.5%;
+			display: none;
 		}	
+			#databottomsmall{
+				display: initial;
+				margin-top: 300%;
+				margin-left: 18.5%;
+			}
 			
 		.plan{
-			width: 66%;
+			width: 90%;
 			height: 80px;
 			z-index: 7;
 			position: absolute;
-			margin-top: 290%;
-			margin-left: 18.5%;
+			margin-top: 380%;
+			margin-left: 5%;
 		}
 			
 			#bigplan{
@@ -594,98 +636,98 @@
 			height: 118px;
 			position: absolute;
 			z-index: 7;
-			width: 15%;
+			width: 31%;
 		}
 		
 		
 		#hiking{
-			margin-top: 315%;
-			margin-left: 10.5%;
+			margin-top: 410%;
+			margin-left: 18.5%;
 		}
 		
 		#exploring{
-			margin-top: 315%;
-			margin-left: 42.5%;
+			margin-top: 485%;
+			margin-left: 18.5%;
 		}
 		
 		#fishing{
-			margin-top: 315%;
-			margin-left: 74.5%;
+			margin-top: 563%;
+			margin-left: 18.5%;
 		}
 		
 		.activity{
 			height: 118px;
-			width: 23%;
+			width: 71%;
 		}
 		
 		#hike{
-			margin-top: 331%;
-			margin-left: 10.5%;
+			margin-top: 445%;
+			margin-left: 18.5%;
 		}
 		
 		#explore{
-			margin-top: 331%;
-			margin-left: 42.5%;
+			margin-top: 520%;
+			margin-left: 18.5%;
 		}
 		
 		#fish{
-			margin-top: 331%;
-			margin-left: 74.5%;
+			margin-top: 598%;
+			margin-left: 18.5%;
 		}
 		
 		#riding{
-			margin-top: 365%;
-			margin-left: 42.5%;
+			margin-top: 637%;
+			margin-left: 18.5%;
 		}
 		
 		#camping{
-			margin-top: 365%;
-			margin-left: 74.5%;
+			margin-top: 705%;
+			margin-left: 18.5%;
 		}
 		
 		#ride{
-			margin-top: 381%;
-			margin-left: 42.5%;
+			margin-top: 672%;
+			margin-left: 18.5%;
 		}
 		
 		#camp{
-			margin-top: 381%;
-			margin-left: 74.5%;
+			margin-top: 740%;
+			margin-left: 18.5%;
 		}
 		
 		.moreparks{
 			position: absolute;
 			z-index: 7;
 			height: 118px;
-			width: 51%;
-			margin-left: 10.5%;
-			margin-top: 430%;
+			width: 71%;
+			margin-left: 18.5%;
+			margin-top: 800%;
 		}
 		
 		.gif{
-			width: 23%;
+			width: 71%;
 		}
 		
 		#firstcolumn{
-			margin-top: 450%;
-			margin-left: 10.5%;
+			margin-top: 820%;
+			margin-left: 18.5%;
 		}
 		
 		#midcolumn{
-			margin-top: 450%;
-			margin-left: 42.5%;
+			margin-top: 945%;
+			margin-left: 18.5%;
 		}
 		
 		#lastcolumn{
-			margin-top: 450%;
-			margin-left: 74.5%;
+			margin-top: 1070%;
+			margin-left: 18.5%;
 		}
 		
 		.wikipedia{
 			height: 118px;
-			width: 51%;
-			margin-left: 42.5%;
-			margin-top: 490%;
+			width: 71%;
+			margin-left: 18.5%;
+			margin-top: 1190%;
 		}
 		
 		#hiking img{
@@ -777,14 +819,17 @@
   <div class="description" id="topdes"><p>Grand Teton National Park protects stunning mountain scenery and a diverse array of wildlife. Rising more than 7,000 feet above the valley of Jackson Hole, the Teton Range dominates the park's skyline. Natural processes continue to shape the ecosystem against this impressive and iconic backdrop.</p></div>
 	  
   <div class="data" id="datatop"><h2>485<br>MILES</h2></div>
+  <div class="data" id="datatopsmall"><h2>485 MILES</h2></div>
 	  
   <div class="description" id="middledes"><p>While Grand Teton is the highest peak in the park, there are eight more peaks that exceed 12,000 feet in height. The elevation of the park ranges from the sagebrush-dominated valley floor to the windswept granite summit of the Grand Teton.</p></div>
 	  
   <div class="data" id="datamid"><h2>13,770<br>FEET</h2></div>
+  <div class="data" id="datamidsmall"><h2>13,770 FEET</h2></div>
 	  
   <div class="description" id="bottomdes"><p>With so many miles of trails, visitors to the park can explore to their heart’s content. During summer, wildflowers paint meadows in vivid colors. Crystalline alpine lakes fill glacial cirques, and streams cascade down rocky canyons to larger lakes at the foot of the range. These lakes mirror the mountains on calm days.</p></div>
 	  
   <div class="data" id="databottom"><h2>200<br>MILES</h2></div>
+  <div class="data" id="databottomsmall"><h2>200 MILES</h2></div>
 	  
 	  
 	  
@@ -792,15 +837,15 @@
 	  
   <div class="plan" id="smallplan"><h5>PLAN YOUR TRIP</h5></div>
 	  
-   <div class="icon" id="exploring"><img src="exploring2.svg" alt=""/></div>
+   <div class="icon" id="exploring"><img src="exploringg.svg" alt=""/></div>
 	  
-  <div class="icon" id="hiking"><img src="hiking2.svg" alt=""/></div>
+  <div class="icon" id="hiking"><img src="hikingg.svg" alt=""/></div>
 	  
-  <div class="icon" id="fishing"><img src="fishing2.svg" alt=""/></div>
+  <div class="icon" id="fishing"><img src="fishingg.svg" alt=""/></div>
 	  
-  <div class="icon" id="riding"><img src="riding2.svg" alt=""/></div>
+  <div class="icon" id="riding"><img src="ridingg.svg" alt=""/></div>
 	  
-  <div class="icon" id="camping"><img src="camping2.svg" alt=""/></div>
+  <div class="icon" id="camping"><img src="campingg.svg" alt=""/></div>
 	  
   <div class="activity" id="explore"><h6>Exploring</h6><p>Driving through Grand Teton National Park offers stunning views of the Teton Range.</p></div>
 	  
