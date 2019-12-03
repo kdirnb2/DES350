@@ -116,6 +116,21 @@
 			z-index: 3
 		}
 		
+		.divider{
+			position: absolute;
+			z-index: 5;
+			width: 100%;
+			margin-top: 170%;
+		}
+		
+		#short{
+			display: show;
+		}
+		
+		#long{
+			display: none;
+		}
+		
 		
 		.title{
 			position: absolute;
@@ -170,6 +185,7 @@
 			line-height: 1.2em;
 			margin-top: 45px;
 		}
+		
 		
 		h6{
 			color: white;
@@ -458,6 +474,26 @@
 		
 		
 		@media only screen and (max-width: 600px){
+			
+			
+		.divider{
+			position: absolute;
+			z-index: 5;
+			width: 100%;
+			margin-top: 360%;
+		}
+		
+		#short{
+			display: none;
+		}
+		
+		#long{
+			display: initial;
+		}
+			
+			
+			
+			
 			
 		h1{
 			font-size: 11vw;
@@ -832,21 +868,25 @@
   <div class="data" id="databottom"><h2>200<br>MILES</h2></div>
   <div class="data" id="databottomsmall"><h2>200 MILES</h2></div>
 	  
+
+  <div class="divider" id="short"><img src="divider.svg" alt=""/></div>
+  <div class="divider" id="long"><img src="divider2.svg" alt=""/></div>
+	  
 	  
 	  
   <div class="plan" id="bigplan"><h5>PLAN<br>YOUR TRIP</h5></div>
 	  
   <div class="plan" id="smallplan"><h5>PLAN YOUR TRIP</h5></div>
 	  
-   <div class="icon" id="exploring"><img src="exploringg.svg" alt=""/></div>
+   <div class="icon" id="exploring"><img src="exploringb.svg" alt=""/></div>
 	  
-  <div class="icon" id="hiking"><img src="hikingg.svg" alt=""/></div>
+  <div class="icon" id="hiking"><img src="hikingb.svg" alt=""/></div>
 	  
-  <div class="icon" id="fishing"><img src="fishingg.svg" alt=""/></div>
+  <div class="icon" id="fishing"><img src="fishingb.svg" alt=""/></div>
 	  
-  <div class="icon" id="riding"><img src="ridingg.svg" alt=""/></div>
+  <div class="icon" id="riding"><img src="ridingb.svg" alt=""/></div>
 	  
-  <div class="icon" id="camping"><img src="campingg.svg" alt=""/></div>
+  <div class="icon" id="camping"><img src="campingb.svg" alt=""/></div>
 	  
   <div class="activity" id="explore"><h6>Exploring</h6><p>Driving through Grand Teton National Park offers stunning views of the Teton Range.</p></div>
 	  
